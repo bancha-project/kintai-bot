@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  try-clasp:
+    build: .
+    tty: true
+    volumes:
+      - "./src/:/app/"
+      - "./.clasprc.json:/root/.clasprc.json"
+    working_dir: /app
